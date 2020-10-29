@@ -15,6 +15,11 @@
     <img src="https://badgen.net/badge/Gatsby/2.23.12/purple" alt="Gatsby version" />
   </a>
   
+   <a href="https://github.com/Wurikos/newtest29-10-20/pulls">
+     <img src="https://badgen.net/github/prs/Wurikos/newtest29-10-20" alt="Pull Request Amount">
+   </a>
+   <img src="https://badgen.net/github/last-commit/Wurikos/newtest29-10-20" alt="Last commit date" />
+    
   <a href="./LICENSE">
     <img src="https://badgen.net/badge/license/MIT/blue" alt="License">
   </a>

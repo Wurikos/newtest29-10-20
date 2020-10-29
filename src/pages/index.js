@@ -2,7 +2,7 @@ import React from "react";
 import theme from "theme";
 import { Theme, Text, Image, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Section, Override, StackItem, Stack } from "@quarkly/components";
+import { Section, Override, Menu, StackItem, Stack } from "@quarkly/components";
 export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
@@ -29,6 +29,32 @@ export default (() => {
 				<Box padding="10px">
 					<Image src="https://images.unsplash.com/photo-1503342394128-c104d54dba01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" width="320px" max-width="100%" />
 				</Box>
+			</Box>
+		</Section>
+		<Section>
+			<Box
+				display="flex"
+				padding="12px 0"
+				justify-content="space-between"
+				align-items="center"
+				flex-direction="row"
+				md-flex-direction="column"
+			>
+				<Text margin="0" md-margin="0px 0 20px 0" text-align="left" font="--lead">
+					Awesome Company
+				</Text>
+				<Menu
+					display="flex"
+					justify-content="center"
+					font="--base"
+					font-weight="700"
+					md-flex-direction="column"
+					md-align-items="center"
+				>
+					<Override slot="link" text-decoration="none" color="--dark" padding="6px 12px" />
+					<Override slot="link-active" color="--primary" />
+					<Override slot="item" padding="6px" />
+				</Menu>
 			</Box>
 		</Section>
 		<Section background="--color-darkL2" padding="64px 0" sm-padding="40px 0">
